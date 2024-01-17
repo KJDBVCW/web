@@ -38,7 +38,7 @@
                     </li>
                     <li><a href="">Hoạt động</a></li>
                     <li><a href="">Tin tức</a></li>
-                    <li>
+                    <li class="lienhe" onclick="toggleChild()">
                         <a href="">
                             Liên hệ
                             <i class="nav-around-down-2 ti-angle-down"></i>
@@ -85,6 +85,20 @@
         </div>
     </div>
 
+    <script>
+        function toggleChild() {
+            const childContainer = document.querySelector('.subnav2');
+            const arrow = document.querySelector('.lienhe');
+
+            if (childContainer.style.display === 'none' || childContainer.style.display === '') {
+                childContainer.style.display = 'block';
+                arrow.style.transform = 'rotate(90deg)';
+            } else {
+                childContainer.style.display = 'none';
+                arrow.style.transform = 'rotate(0deg)';
+            }
+        }
+    </script>
         
 </body>
 </html>
