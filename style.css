@@ -1,0 +1,124 @@
+/* reset css */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+html {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+#main {
+
+}
+
+#sub {
+    height: 111.2px;
+    background-color:aliceblue;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+#nav {
+    
+    display: inline-block;
+    background-image: url(https://clbtlit.github.io/web-tlit/picture/tCHu/logo_clb2.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 15px 0;
+    width: 70px;
+
+    
+
+    
+}
+#nav li {
+    display: inline-block;
+    
+
+    
+    
+}
+#nav li a {
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+    
+    
+}
+
+#sub .search-btn {
+    float: right;
+    padding: 0 16px;
+    cursor: pointer;
+}
+#sub .search-icon {
+    color: #000;
+    font-size: 16px;
+    line-height: 111.2px;
+    display: inline-block;
+    
+}
+#sub2 {
+    height: 48px;
+    background-color:aliceblue;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+#nav2 {
+
+}
+#nav2 li {
+    display: inline-block;
+}
+#nav2 li a {
+    
+    color: #000;
+    text-decoration: none;
+    line-height: 48px;
+    padding: 0 32px;
+    border: 0.8px;
+    
+}
+#nav2 .subnav {
+    display: inline-block;
+    position: absolute;
+    
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    visibility: hidden;
+}
+#nav2 li:hover .subnav2 {
+    display: block;
+}
+
+#nav2 .subnav2 {
+    display: none;
+    position: absolute;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#nav2 > li:hover > a,
+#nav2 .subnav2 li:hover a {
+    color: red;
+}
+#nav2 .nav-around-down,
+#nav2 .nav-around-down-2 {
+    font-size: 12px;
+}
+
+
+#slider {
+    
+    padding-top: 50%;
+    background: url(https://clbtlit.github.io/web-tlit/picture/tCHu/slider.jpg)top center / cover no-repeat;
+}
+
+
+#content {
+
+}
+
+#footer {
+
+}
+
