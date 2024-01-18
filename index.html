@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./assets/fonts/themify-icons-font/themify-icons/themify-icons.css">
 </head>
 <body>
-
+    
     <div id="main">
         <div id="header">
             
@@ -25,20 +25,15 @@
             <div id="sub2">
                 <ul id="nav2">
                     <li>
-                        <a href="">
-                            Trang chủ
-                            <i class="nav-around-down ti-angle-double-down"></i>
-                        </a>
-                        <ul class="subnav">
-                            <li><a href="">Giới thiệu</a></li>
-                            <li><a href="">Thành viên</a></li>
-                            <li><a href="">Sản phẩm</a></li>
-                        
-                        </ul>
+                        <a href="">Trang chủ</a>                        
                     </li>
-                    <li><a href="">Hoạt động</a></li>
+                    <li>
+                        <a href="about.html">
+                            Hoạt động                                                   
+                        </a>
+                    </li>
                     <li><a href="">Tin tức</a></li>
-                    <li class="lienhe" onclick="toggleChild()">
+                    <li>
                         <a href="">
                             Liên hệ
                             <i class="nav-around-down-2 ti-angle-down"></i>
@@ -71,13 +66,46 @@
 
             
         
-        
+        </div>
         <div id="slider">
             
         </div>
 
-        <div id="content">
-
+        <div id="app__container">
+            <div class="grid">
+                <div class="grid__row">
+                    <div class="grid__column-2">
+                        <nav class="category">
+                            <h3 class="category__heading">
+                                <i class="category__heading-icon ti-view-list-alt"></i>
+                                Giới thệu
+                                
+                            </h3>
+                            <ul class="category-list">
+                                <li class="category-item category-item--active">
+                                    <a href="#" class="category-item__link">Giới thiệu chung</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Quy chế</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Postcard</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link"></a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="grid__column-10">
+    
+                    </div>
+                </div>
+            </div>
+            <div class="content-focus">
+                <h2>Tiêu điểm</h2>
+            
+            </div>
         </div>
 
         <div id="footer">
@@ -85,20 +113,6 @@
         </div>
     </div>
 
-    <script>
-        function toggleChild() {
-            const childContainer = document.querySelector('.subnav2');
-            const arrow = document.querySelector('.lienhe');
-
-            if (childContainer.style.display === 'none' || childContainer.style.display === '') {
-                childContainer.style.display = 'block';
-                arrow.style.transform = 'rotate(90deg)';
-            } else {
-                childContainer.style.display = 'none';
-                arrow.style.transform = 'rotate(0deg)';
-            }
-        }
-    </script>
         
 </body>
 </html>
