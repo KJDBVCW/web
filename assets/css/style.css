@@ -15,36 +15,37 @@ html {
 }
 
 #sub {
-    height: 111.2px;
+    height: 100px;
+    max-width: 1472px;
     background-color:aliceblue;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
+
 #nav {
     
     display: inline-block;
-    background-image: url(https://clbtlit.github.io/web-tlit/picture/tCHu/logo_clb2.png);
+    /* background-image: url(https://clbtlit.github.io/web-tlit/picture/tCHu/logo_clb2.png); */
     background-size: 100%;
     background-repeat: no-repeat;
     padding: 15px 0;
     width: 70px;
 
-    
-
-    
 }
-#nav li {
-    display: inline-block;
     
-
-    
-    
+.logo {
+    /* position: fixed; */
+    padding: 25px 0 0 50px;
+    align-items: center;
+    width: auto;
+    max-height: 80px;
 }
-#nav li a {
-    display: inline-block;
-    color: #000;
+
+#sub .elements a  {
+    position: absolute; 
+    left: 620px;
+    top: 25px;
+    font-size: 50px;
     text-decoration: none;
-    
-    
 }
 
 #sub .search-btn {
