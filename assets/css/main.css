@@ -16,10 +16,10 @@ html {
 
 #sub {
     height: 111.2px;
-    background-color:aliceblue;
+    /* background-color:aliceblue; */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
-#nav {
+/* #nav {
     
     display: inline-block;
     background-image: url(https://clbtlit.github.io/web-tlit/picture/tCHu/logo_clb2.png);
@@ -45,6 +45,33 @@ html {
     text-decoration: none;
     
     
+} */
+
+#nav {
+    
+    display: inline-block;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 15px 0;
+    width: 70px;
+
+}
+    
+.logo {
+    
+    padding: 25px 0 0 50px;
+    align-items: center;
+    width: auto;
+    max-height: 80px;
+}
+
+#sub .elements .TLIT_NEWS{
+    position: absolute; 
+    left: 600px;
+    top: 10px;
+    font-size: 50px;
+    text-decoration: none;
+    /* padding: 50% 0 0 100px; */
 }
 
 #sub .search-btn {
@@ -65,7 +92,7 @@ html {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 #nav2 {
-
+    background-color: #fff;
 }
 #nav2 li {
     display: inline-block;
