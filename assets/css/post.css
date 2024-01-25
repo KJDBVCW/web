@@ -111,40 +111,20 @@ html {
 }
 
 /*slider*/
-.slider > div > .wrapper {
-    margin-top: 100px;
-    margin-left: 100px;
-    margin-right: 100px;
-}
-.slider .item {
-    position: relative;
-    height: 474px;
-}
-.slider .item::before {
-    content: '';
-    position: absolute;
-    top: 30%;
-    left: 0;
-    width: 450px;
-    height: 300px;
-    background-color: var(--white-color);
-    z-index: 1;
-    filter: blur(50px);
-    opacity: .8;
-}
-.swiper-pagination .swiper-pagination-bullet-active {
-    background-color: var(--secondary-dark-color);
+.container {
+    max-width: 900px; 
+    margin: auto; 
+    transform: scale(0.8); 
+    transform-origin: center center;
+    transition: transform 0.5s;
+  }
+
+.carousel-item img {
+    max-width: 100%; 
+    height: auto; 
+    display: block;
+    margin: auto; 
 }
 
-/* chỉnh sửa ảnh  */
 
-.swiper {
-    width: 600px;
-    height: 600px;
-}
 
-.image object-cover img {
-    width: 100px;
-    height: 100px;
-    object-fit: fill;
-}
