@@ -114,7 +114,7 @@ html {
 #slider {
     
     padding-top: 50%;
-    background: url(assets/img/libra.png)top center / cover no-repeat;*/
+    background: url(https://github.com/KJDBVCW/web/blob/main/assets/img/libra.jpg?raw=true)top center / cover no-repeat;*/
     
 }
 
@@ -141,9 +141,10 @@ html {
 }
 
 .grid__column-2 {
+    
     padding-left: 12px;
     padding-right: 12px;
-    margin-left: 100px;
+    margin-left: 20px;
     width: 16.6667%;
     background-color: #f5f5f5;
 }
@@ -153,10 +154,11 @@ html {
     margin-right: 50px;
 }
 
-.grid__column-10 {
-    padding-left: 350px;
-    padding-right: 350px;
-    margin-right: 100px;
+.grid__column {
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
     width: 83.3333%;
 }
 
@@ -182,15 +184,67 @@ html {
     p
 
 }
+
 .home-filter__page-control {
-    padding-left: 600px;
-    padding-right: 200px;
+    padding-left: 369px;
+    padding-right: 369px;
 }
 #home-filter__page-btn .fas {
 
 }
-
+.text-container {
+    text-decoration: none;
+}
+/*footer*/
 #footer {
 
 }
 
+/*modal*/
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);
+    
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.modal.open {
+    display: flex;
+}
+.modal-container {
+    background: #fff;
+    width: 900px;
+    min-width: 200px;
+    
+
+}
+.modal-header {
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+
+}
+.modal-close:hover {
+    opacity: 1;
+    color: red;
+}
+.modal-close {
+    position: absolute;
+    
+    
+    color:#000;
+    padding: 12px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+.modal-body {
+    padding: 16px;
+}
