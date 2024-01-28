@@ -52,18 +52,10 @@ html {
     
 
 
-#sub .search-btn {
-    float: right;
-    padding: 0 16px;
-    cursor: pointer;
-}
-#sub .search-icon {
-    color: #000;
-    font-size: 16px;
-    line-height: 111.2px;
-    display: inline-block;
+
+
     
-}
+
 #sub2 {
     height: 48px;
     background-color:#fff;
