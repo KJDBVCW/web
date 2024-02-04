@@ -11,10 +11,18 @@ html {
     font-family:Arial, Helvetica, sans-serif;
 }
 
-
-#main {
-    
+body {
+    position: relative;
+    min-height: 100vh;
+    margin: 0;
 }
+
+main {
+    flex: 1;
+}
+/* #main {
+    
+} */
 
 
 #header {
@@ -63,12 +71,15 @@ html {
     background-color:#fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
-#nav2 {
 
-}
+/* #nav2 {
+
+} */
+
 #nav2 li {
     display: inline-block;
 }
+
 #nav2 li a {
     
     color: #000;
@@ -117,32 +128,36 @@ html {
 #slider{
     
     padding-top:47%;
-    background: url(https://github.com/KJDBVCW/web/blob/main/assets/img/libra.jpg?raw=true)top center / cover no-repeat;*/
-    padding: 593.325px;
+    background: url(https://github.com/KJDBVCW/web/blob/main/assets/img/libra.jpg?raw=true)top center / cover no-repeat ;
+    /* padding: 593.325px; */
 }
 
 
 
-#container {
+/* #container {
 
-}
+} */
+
 .grid {
     width: auto;
     max-width: 100%;
     margin: 0 auto;
 }
+
 .home-filter {
     min-height: 42px;
     display: flex;
     justify-content: space-between;
    
 }
+
 .home-filter-list {
     padding-left: 0;
     margin: auto ;
     padding: 5px 15px;
     
 }
+
 .home-filter-item {
     list-style: none;
     margin: 0 8px;
@@ -152,8 +167,6 @@ html {
     
 }
 
-
-
 .home-product-item {
     margin-top: 24px;
     padding: 12px 0 32px 0;
@@ -161,40 +174,8 @@ html {
     justify-content: space-around;
     flex-wrap: wrap-reverse;
 }
-.image-container {
-    display: flex;
-    flex-basis: 30%;
-    height: 48px;
-    margin: 24px;
-    line-height: 48px;
-    
-    
-    
-    
 
-}
-.img1 {
-    justify-content: space-between;
-    padding: 0 24px 24px;
-    
-    
-    
-    
-}
-.img1 a,
-.img2 a {
-    text-decoration: none;
-    color: #000;
-    list-style: none;
-    
 
-    
-}
-.img2 {
-    justify-content: space-between;
-    padding:  12px 0;
-    
-}
 .btn  {
     background: rgb(8,133,229);
     color: #fff;
@@ -206,148 +187,104 @@ html {
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-
-
-@media (min-width: 740px) {
-    .feature-layout {
-        flex-direction: row;
-    }
-}
-
-
-/*footer*/
-
-
-
-
-
-
-.modal,.modal2,.modal3,.modal4,.modal5,.modal6,.modal7,.modal8
- {
+/* modal  */
+.modal {
+    display: none;
     position: fixed;
     top: 0;
-    right: 0;
-    bottom: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.3);
-    
-    align-items: center;
-    justify-content: center;
-   
-    display:none;
-    
-}
-.modal.open,.modal2.open,.modal3.open,.modal4.open,.modal5.open,.modal6.open,.modal7.open,.modal8.open 
-{
-    display: flex;
-}
-.modal-container,.modal-container2,.modal-container3,.modal-container4,.modal-container5,.modal-container6,.modal-container7,.modal-container8
-{
-    background: #fff;
-    border: none;
-    border-radius: 40px;
-    outline: none;
-    width: 900px;
-    min-width: 200px;
-    animation: modalFadeIn ease 0.3s;
-    
-
-}
-.modal-header {
-    height: 130px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 30px;
-
-}
-
-#btn-close:hover,#btn-close2:hover,#btn-close3:hover,#btn-close4:hover,#btn-close5:hover,#btn-close6:hover,#btn-close7:hover,#btn-close8:hover
-{
-    opacity: 1;
-    color: red;
-}
-.modal-close,.modal-close2,.modal-close3,.modal-close4,.modal-close5,.modal-close6,.modal-close7,.modal-close8
- {
-    position: absolute;
-    top: 0;
-    right: 6px;    
-    color:#000;
-    padding: 24px;
-    cursor: pointer;
-    opacity: 0.8;
-    
-}
-#btn-close,#btn-close2,#btn-close3,#btn-close4,#btn-close5,#btn-close6,#btn-close7,#btn-close8
- {
-    background: #fff;
-    border: none;
-    font-size: 30px;
-    border-radius: 10px;
-    outline: none;
-
-
-    
-}
-.modal-body {
-    padding: 16px;
-}
-
-@keyframe modalFadeIn,
-
-
- {
-    from {
-        transform: translateY(-100PX);
-    }
-    to {
-        transform: translateY(0PX);
-    }
-}
-@keyframe modal2FadeIn,
-
-
- {
-    from {
-        transform: translateY(-100PX);
-    }
-    to {
-        transform: translateY(0PX);
-    }
-}
-
-@keyframe modal3FadeIn,
-
-
- {
-    from {
-        transform: translateY(-100PX);
-    }
-    to {
-        transform: translateY(0PX);
-    }
-}
-li {
-    list-style: none;
-}
-a{
-    text-decoration: none;
-}
-footer {
     width: 100%;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    left: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
     background-color: #fff;
-    box-shadow: 0 16px 70px -8px rgba(0, 0, 0, 0.3);
+    margin: 15% auto;
+    padding: 20px;
+    width: 70%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-text {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.container-fluid {
+    width: 50%;
+    display: block;
+    position: relative;
+}
+
+.container-fluid .row{
+    padding: 20px 100px 20px ; 
+    text-align: center;
+}
+
+
+.container-fluid .row .image {
+    display: block;
+}
+
+.image {
+    height: 400px;
+    width: 3000px;
+    margin-bottom: 100px;
+}
+
+
+.content {
+    margin-top: 50px;
+}
+
+.image .content img {
+    height: 250px;
+    width: 350px;
+
+}
+
+.content p{
+    margin: 0px;
+    text-align: left;
+    margin-left: 32px;
+}
+
+.content img {
+    height: 100%;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+    overflow: hidden;
+}
+
+
+
+
+/* footer */
+.footer {
+    width: 100%;
+    bottom: 0;
+    background-color: #2a2626;
     transition: background 0.3s linear;
 }
 .container {
-    max-width: 1240px;
+    max-width: auto;
     padding: 30px 40px;
     margin: auto;
-}
+} 
 .content__footer {
     display: flex;
     justify-content: space-between;
@@ -367,7 +304,7 @@ footer {
     font-size: 1.5rem;
     font-weight: 700;
     margin: 0 1rem;
-    color: #000;
+    color: #ffffff;
 }
 .desc__area {
     max-width: 320px;
@@ -389,15 +326,33 @@ footer {
    display: flex;
 
 }
-.social__media a:hover {
-    color: #313131;
+
+.social__media a {
+    margin: 20px;
 }
-li.social__media {
-    color: #000;
-    font-weight: 600;
-    
+
+.social__media .fb img {
+    width: 100px;
+    height: 50px;
 }
+
+.social__media .ins img {
+    width: 100px;
+    height: 50px;
+}
+
+.social__media .tiktok img {
+    width: 95px;
+    height: 50px;
+}
+
 .footer__contact {
     
-    padding: ;
+    padding: 50px ;
 }
+
+
+  
+  
+  
+  
