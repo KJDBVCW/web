@@ -20,11 +20,8 @@ body {
 main {
     flex: 1;
 }
-/* #main {
-    
-} */
 
-
+/* header */
 #header {
     flex-wrap: nowrap;
     justify-content: flex-start;
@@ -36,7 +33,6 @@ main {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 #nav {
-    
     display: inline-block;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -46,7 +42,6 @@ main {
 }
 
 .logo {
-    
     padding: 25px 0 0 50px;
     align-items: center;
     width: auto;
@@ -62,10 +57,6 @@ main {
     /* padding: 50% 0 0 100px; */
 }
     
-
-
-
-
 #sub2 {
     height: 48px;
     background-color:#fff;
@@ -133,11 +124,6 @@ main {
 }
 
 
-
-/* #container {
-
-} */
-
 .grid {
     width: auto;
     max-width: 100%;
@@ -185,6 +171,11 @@ main {
     outline: none;
     cursor: pointer;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* phần content */
+.container-fluid {
+    background-color: #F6CBDA;
 }
 
 /* modal  */
