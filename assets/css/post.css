@@ -120,7 +120,7 @@ main {
   }
 
 .carousel-item img {
-    max-width: 100%; 
+    max-width: 90%; 
     height: auto; 
     display: block;
     margin: auto; 
@@ -130,13 +130,17 @@ main {
     margin-bottom: 50px;
 }
 
+/* .carousel-control-prev, .carousel-control-next {
+    position: ;
+} */
+
 
 /* footer */
 .footer {
     width: 100%;
     bottom: 0;
-    background-color: #2a2626;
-    transition: background 0.3s linear;
+    background-color: #ffffff;
+    /* transition: background 0.3s linear; */
 }
 .container {
     max-width: auto;
@@ -177,10 +181,13 @@ main {
 }
 .service__area {
     display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
 .social__media {
 
-   margin-left: 400px; 
+   /* margin-left: 10px;  */
    display: flex;
 
 }
@@ -190,21 +197,21 @@ main {
 }
 
 .social__media .fb img {
-    width: 100px;
+    width: 50px;
     height: 50px;
 }
 
 .social__media .ins img {
-    width: 100px;
+    width: 50px;
     height: 50px;
 }
 
 .social__media .tiktok img {
-    width: 95px;
+    width: 50px;
     height: 50px;
 }
 
-.footer__contact {
+.footer__contact li {
     
-    padding: 50px ;
+    padding-bottom: 10px ;
 }
