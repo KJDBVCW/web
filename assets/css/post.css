@@ -21,8 +21,14 @@ main {
 
 /* header */
 #header {
+    position: fixed;
     flex-wrap: nowrap;
     justify-content: flex-start;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff; /* Đặt màu nền của header */
+    z-index: 1000;
 }
 #sub {
     height: 100px;
@@ -61,12 +67,13 @@ main {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-/* #nav2 {
-
-} */
+#nav2 {
+    padding-left: 500px;
+}
 
 #nav2 li {
     display: inline-block;
+    padding-right: 50px;
 }
 
 #nav2 li a {
@@ -140,19 +147,22 @@ main {
     width: 100%;
     bottom: 0;
     background-color: #ffffff;
-    /* transition: background 0.3s linear; */
+    transition: background 0.3s linear;
 }
+
 .container {
     max-width: auto;
     padding: 30px 40px;
     margin: auto;
 } 
+
 .content__footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 1rem;
 }
+
 .profile .logo__area {
     display: flex;
     align-items: center;
@@ -213,5 +223,5 @@ main {
 
 .footer__contact li {
     
-    padding-bottom: 10px ;
+    padding-bottom: 20px ;
 }
