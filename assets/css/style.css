@@ -3,7 +3,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    max-width: 100%;
+    /* max-width: 100%; */
     scroll-behavior: smooth;
     
 }
@@ -12,9 +12,10 @@ html {
 }
 
 body {
-    position: relative;
+    /* position: relative;
     min-height: 100vh;
-    margin: 0;
+    margin: 0; */
+    overflow-x: hidden;
 }
 
 main {
@@ -63,9 +64,9 @@ main {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-/* #nav2 {
-
-} */
+#nav2 {
+    padding-left: 0;
+}
 
 #nav2 li {
     display: inline-block;
@@ -159,6 +160,10 @@ main {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap-reverse;
+}
+
+.home-product-item .item {
+    padding-right: 50px !important;
 }
 
 
@@ -260,7 +265,13 @@ main {
     transition: all 0.5s ease-in-out;
     overflow: hidden;
 }
+/* button trong modal */
 
+.btn-outline-danger {
+    color: #000000 !important;
+    background-color: #ffffff !important;
+    border-color: #ffffff !important;
+}
 
 
 
