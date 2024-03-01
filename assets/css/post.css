@@ -27,9 +27,10 @@ main {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #ffffff; /* Đặt màu nền của header */
+    background-color: #ffffff;
     z-index: 1000;
 }
+
 #sub {
     height: 100px;
     max-width: 100%;
@@ -54,7 +55,7 @@ main {
 
 #sub .elements .TLIT_NEWS{
     position: absolute; 
-    left: 600px;
+    left: 570px;
     top: 10px;
     font-size: 50px;
     text-decoration: none;
@@ -134,7 +135,7 @@ main {
 }
 
 .carousel {
-    margin-bottom: 50px;
+    margin-top: 50px;
 }
 
 /* .carousel-control-prev, .carousel-control-next {
@@ -150,10 +151,11 @@ main {
     transition: background 0.3s linear;
 }
 
-.container {
+.container-footer {
     max-width: auto;
+    height: 393px;
     padding: 30px 40px;
-    margin: auto;
+    margin: 0px 32.4px;
 } 
 
 .content__footer {
@@ -181,14 +183,19 @@ main {
 .desc__area {
     max-width: 320px;
     margin-bottom: 1.25rem;
-
 }
 
 .desc__area a {
     color: #828282;
     font-weight: 400;
     line-height: 28px;
+    text-decoration: underline;
 }
+
+.footer__bottom .tou {
+    text-decoration: underline rgb(11, 121, 255);
+}
+
 .service__area {
     display: flex;
     flex-direction: column;

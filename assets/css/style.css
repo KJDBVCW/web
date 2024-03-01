@@ -182,6 +182,7 @@ main {
     outline: none;
     cursor: pointer;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
 }
 
 /* phần content */
@@ -191,12 +192,16 @@ main {
 
 /* modal  */
 .modal {
-    display: none;
+    display: flex;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: auto;
+    max-height: 95vh;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto; 
     background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -224,6 +229,7 @@ main {
 .modal-text {
     max-width: 600px;
     margin: 0 auto;
+    animation: fadeIn 0.3s ease;
 }
 
 .container-fluid {
@@ -256,7 +262,7 @@ main {
 .image .content img {
     height: 250px;
     width: 350px;
-
+    border-radius: 20%;
 }
 
 .content p{
@@ -281,6 +287,14 @@ main {
     margin-top: 10px;
 }
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 
 
 /* footer */
@@ -293,7 +307,7 @@ main {
 .container {
     max-width: auto;
     padding: 30px 40px;
-    margin: auto;
+    margin: 0px 32.4px;
 } 
 .content__footer {
     display: flex;
@@ -327,6 +341,11 @@ main {
     font-weight: 400;
     line-height: 28px;
 }
+
+.desc__area a:hover {
+    color: rgb(17, 103, 169);
+}
+
 .service__area {
     display: flex;
     flex-direction: column;
@@ -361,7 +380,7 @@ main {
 
 .footer__contact li {
     
-    padding-bottom: 10px ;
+    padding-bottom: 20px ;
 }
 
 
